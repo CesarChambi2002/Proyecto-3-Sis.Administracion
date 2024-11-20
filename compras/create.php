@@ -459,6 +459,7 @@ include ('../app/controllers/compras/listado_de_compras.php');
                                            </div>
                                        </div>
 
+<<<<<<< HEAD
                                        <div class="col-md-12">
                                            <div class="form-group">
                                                <label for="">Comprobante de la compra</label>
@@ -472,6 +473,39 @@ include ('../app/controllers/compras/listado_de_compras.php');
                                                <input type="text" class="form-control" id="precio_compra_controlador">
                                            </div>
                                        </div>
+=======
+                                        <!-- Campo validado [Comprobante de la compra] -->
+                                         <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label for="">Comprobante de la compra</label>
+                                                <input type="text" class="form-control" id="comprobante" oninput="validarSoloLetras(this)">
+                                            </div>
+                                        </div>
+
+                                        <script>
+                                        function validarSoloLetras(input) {
+                                            // Expresión regular para permitir solo letras (mayúsculas y minúsculas) y espacios
+                                            input.value = input.value.replace(/[^a-zA-Z\s]/g, '');
+                                        }
+                                        </script>
+
+                                        <!-- Campo validado [PRECIO COMPRA] -->
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label for="">Precio de la compra</label>
+                                                <input type="text" class="form-control" id="precio_compra_controlador" oninput="validarSoloNumeros(this)">
+                                            </div>
+                                        </div>
+
+                                        <script>
+                                        function validarSoloNumeros(input) {
+                                            // Expresión regular para permitir solo números (sin letras ni caracteres especiales)
+                                            input.value = input.value.replace(/[^0-9]/g, '');
+                                        }
+                                        </script>
+
+
+>>>>>>> e916fd0 (Subida del proyecto con correcciones semi final)
 
                                        <div class="col-md-6">
                                            <div class="form-group">
@@ -486,6 +520,7 @@ include ('../app/controllers/compras/listado_de_compras.php');
                                            </div>
                                        </div>
                                        <div class="col-md-12">
+<<<<<<< HEAD
                                            <div class="form-group">
                                                <label for="">Cantidad de la compra</label>
                                                <input type="number" id="cantidad_compra" style="text-align: center" class="form-control">
@@ -502,6 +537,29 @@ include ('../app/controllers/compras/listado_de_compras.php');
                                                });
                                            </script>
                                        </div>
+=======
+    <div class="form-group">
+        <label for="">Cantidad de la compra</label>
+        <input type="text" id="cantidad_compra" style="text-align: center" class="form-control">
+    </div>
+    <script>
+        // Validar que solo se puedan ingresar números
+        document.getElementById('cantidad_compra').addEventListener('input', function () {
+            // Reemplazar cualquier caracter que no sea un número
+            this.value = this.value.replace(/[^0-9]/g, '');
+        });
+
+        // Calcular el stock total en tiempo real
+        $('#cantidad_compra').keyup(function () {
+            var stock_actual = parseInt($('#stock_actual').val()) || 0; // Evitar NaN si está vacío
+            var stock_compra = parseInt($('#cantidad_compra').val()) || 0; // Evitar NaN si está vacío
+            var total = stock_actual + stock_compra;
+            $('#stock_total').val(total);
+        });
+    </script>
+</div>
+
+>>>>>>> e916fd0 (Subida del proyecto con correcciones semi final)
 
 
                                        <div class="col-md-12">

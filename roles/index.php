@@ -106,8 +106,11 @@ include ('../app/controllers/roles/listado_de_roles.php');
                 "info": "Mostrando _START_ a _END_ de _TOTAL_ Roles",
                 "infoEmpty": "Mostrando 0 a 0 de 0 Roles",
                 "infoFiltered": "(Filtrado de _MAX_ total Roles)",
+<<<<<<< HEAD
                 "infoPostFix": "",
                 "thousands": ",",
+=======
+>>>>>>> e916fd0 (Subida del proyecto con correcciones semi final)
                 "lengthMenu": "Mostrar _MENU_ Roles",
                 "loadingRecords": "Cargando...",
                 "processing": "Procesando...",
@@ -115,11 +118,16 @@ include ('../app/controllers/roles/listado_de_roles.php');
                 "zeroRecords": "Sin resultados encontrados",
                 "paginate": {
                     "first": "Primero",
+<<<<<<< HEAD
                     "last": "Ultimo",
+=======
+                    "last": "Último",
+>>>>>>> e916fd0 (Subida del proyecto con correcciones semi final)
                     "next": "Siguiente",
                     "previous": "Anterior"
                 }
             },
+<<<<<<< HEAD
             "responsive": true, "lengthChange": true, "autoWidth": false,
             buttons: [{
                 extend: 'collection',
@@ -146,8 +154,67 @@ include ('../app/controllers/roles/listado_de_roles.php');
                     collectionLayout: 'fixed three-column'
                 }
             ],
+=======
+            "responsive": true,
+            "lengthChange": true,
+            "autoWidth": false,
+            buttons: [{
+                extend: 'collection',
+                text: 'Reportes',
+                buttons: [
+                    {
+                        text: 'Copiar',
+                        extend: 'copy',
+                        exportOptions: {
+                            columns: [0, 1] // Exportar solo las columnas Nro y Nombre del rol
+                        }
+                    },
+                    {
+                        extend: 'pdf',
+                        orientation: 'portrait', // Orientación vertical
+                        pageSize: 'A4',
+                        customize: function (doc) {
+                            // Centramos el contenido
+                            doc.content[1].table.widths = ['*', '*'];
+                            doc.content[1].table.alignment = 'center';
+                            doc.styles.tableBodyEven.alignment = 'center';
+                            doc.styles.tableBodyOdd.alignment = 'center';
+
+                            // Centramos el título
+                            doc.content[0].text = 'Listado de Roles';
+                            doc.content[0].alignment = 'center';
+                            doc.content[0].fontSize = 14;
+                        },
+                        exportOptions: {
+                            columns: [0, 1] // Exportar solo las columnas Nro y Nombre del rol
+                        }
+                    },
+                    {
+                        extend: 'excel',
+                        exportOptions: {
+                            columns: [0, 1]
+                        }
+                    },
+                    {
+                        text: 'Imprimir',
+                        extend: 'print',
+                        exportOptions: {
+                            columns: [0, 1]
+                        }
+                    }
+                ]
+            },
+            {
+                extend: 'colvis',
+                text: 'Visor de columnas',
+                collectionLayout: 'fixed three-column'
+            }],
+>>>>>>> e916fd0 (Subida del proyecto con correcciones semi final)
         }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
     });
 </script>
 
+<<<<<<< HEAD
 </script>
+=======
+>>>>>>> e916fd0 (Subida del proyecto con correcciones semi final)
