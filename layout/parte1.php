@@ -53,7 +53,11 @@
        
         <a href="<?php echo $URL;?>" class="brand-link">
             <img src="<?php echo $URL;?>/public/images/logo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+<<<<<<< HEAD
             <span class="brand-text font-weight-light">CHICORITAS</span>
+=======
+            <span class="brand-text font-weight-light">TIENDA TOBA</span>
+>>>>>>> e916fd0 (Subida del proyecto con correcciones semi final)
         </a>
       
         <div class="sidebar">
@@ -64,6 +68,7 @@
                     <a href="#" class="d-block"><?php echo $nombres_sesion;?></a>
                 </div>
             </div>
+<<<<<<< HEAD
 
             <nav class="mt-2">
                 <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">             
@@ -90,6 +95,37 @@
                             </li>
                         </ul>
                     </li>
+=======
+            <nav class="mt-2">
+                <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false"> 
+   <!-- USUARIOS   -->                               
+        <li class="nav-item">
+        <a href="#" class="nav-link active" style="background-color: orange; color: black;">
+            <i class="nav-icon fas fa-users" style="color: black;"></i>
+            <p>
+                Usuarios
+                <i class="right fas fa-angle-left" style="color: black;"></i>
+            </p>
+        </a>
+        <ul class="nav nav-treeview">
+            <li class="nav-item">
+                <a href="<?php echo $URL;?>/usuarios" class="nav-link" style="background-color: #FFD700; color: black;">
+                    <i class="far fa-circle nav-icon" style="color: black;"></i>
+                    <p>Listado de usuarios</p>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="<?php echo $URL;?>/usuarios/create.php" class="nav-link" style="background-color: #FFD700; color: black;">
+                    <i class="far fa-circle nav-icon" style="color: black;"></i>
+                    <p>Creación de usuario</p>
+                </a>
+            </li>
+        </ul>
+        </li>
+
+
+ <!-- ROLES   -->   
+>>>>>>> e916fd0 (Subida del proyecto con correcciones semi final)
                     <li class="nav-item ">
                         <a href="#" class="nav-link active">
                             <i class="nav-icon fas fa-address-card"></i>
@@ -113,6 +149,11 @@
                             </li>
                         </ul>
                     </li>
+<<<<<<< HEAD
+=======
+
+ <!-- CATEGORIAS   -->   
+>>>>>>> e916fd0 (Subida del proyecto con correcciones semi final)
                     <li class="nav-item ">
                         <a href="#" class="nav-link active">
                             <i class="nav-icon fas fa-tags"></i>
@@ -130,6 +171,11 @@
                             </li>
                         </ul>
                     </li>
+<<<<<<< HEAD
+=======
+
+ <!-- ALMACEN -->   
+>>>>>>> e916fd0 (Subida del proyecto con correcciones semi final)
                     <li class="nav-item ">
                         <a href="#" class="nav-link active">
                             <i class="nav-icon fas fa-list"></i>
@@ -153,6 +199,11 @@
                             </li>
                         </ul>
                     </li>
+<<<<<<< HEAD
+=======
+
+ <!-- PROVEEDORES -->   
+>>>>>>> e916fd0 (Subida del proyecto con correcciones semi final)
                     <li class="nav-item ">
                         <a href="#" class="nav-link active">
                             <i class="nav-icon fas fa-car"></i>
@@ -170,6 +221,119 @@
                             </li>
                         </ul>
                     </li>
+<<<<<<< HEAD
+=======
+
+ <!-- COMPRAS -->   
+                    <li class="nav-item ">
+                        <a href="#" class="nav-link active">
+                            <i class="nav-icon fas fa-cart-plus"></i>
+                            <p>
+                                Compras
+                                <i class="right fas fa-angle-left"></i>
+                            </p>
+                        </a>
+                        <ul class="nav nav-treeview">
+                            <li class="nav-item">
+                                <a href="<?php echo $URL;?>/compras" class="nav-link">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>Listado de compras</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="<?php echo $URL;?>/compras/create.php" class="nav-link">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>Creación de compra</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+  <!-- VENTAS -->                  
+                    <li class="nav-item ">
+                        <a href="#" class="nav-link active">
+                            <i class="nav-icon fas fa-shopping-basket"></i>
+                            <p>
+                                Ventas
+                                <i class="right fas fa-angle-left"></i>
+                            </p>
+                        </a>
+                        <ul class="nav nav-treeview">
+                            <li class="nav-item">
+                                <a href="<?php echo $URL;?>/ventas" class="nav-link">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>Listado de ventas</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="<?php echo $URL;?>/ventas/create.php" class="nav-link">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>Realizar venta</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+   <!-- clientes -->                         
+                    <li class="nav-item ">
+                        <a href="#" class="nav-link active">
+                            <i class="nav-icon fas fa-user-friends"></i>
+                            <p>
+                                Clientes
+                                <i class="right fas fa-angle-left"></i>
+                            </p>
+                        </a>
+                        <ul class="nav nav-treeview">
+                            <li class="nav-item">
+                                <a href="<?php echo $URL;?>/clientes" class="nav-link">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>Listado de clientes</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+<!-- PROYECCION -->  
+
+<li class="nav-item">
+    <a href="#" class="nav-link active">
+        <i class="nav-icon fas fa-chart-line"></i>
+        <p>
+            Proyección de Ventas
+            <i class="right fas fa-angle-left"></i>
+        </p>
+    </a>
+    <ul class="nav nav-treeview">
+        <li class="nav-item">
+            <a href="<?php echo $URL; ?>/proyeccion/index.php" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Proyección de Ventas</p>
+            </a>
+        </li>
+    </ul>
+</li>
+<!-- SCRIPT DE PROYECCION -->
+<script>
+function cargarProyeccionVentas(event) {
+    event.preventDefault(); // Evita que se recargue la página
+
+    // Realizar la solicitud AJAX
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET', '../proyeccion_ventas/index.php', true);
+    xhr.onload = function () {
+        if (xhr.status === 200) {
+            document.getElementById('contenido-dinamico').innerHTML = xhr.responseText;
+        } else {
+            console.error('Error al cargar el contenido de proyección de ventas');
+        }
+    };
+    xhr.send();
+}
+</script>
+
+
+
+>>>>>>> e916fd0 (Subida del proyecto con correcciones semi final)
                     <li class="nav-item">
                         <a href="<?php echo $URL;?>/app/controllers/login/cerrar_sesion.php" class="nav-link" style="background-color: #ca0a0b">
                             <i class="nav-icon fas fa-door-closed"></i>

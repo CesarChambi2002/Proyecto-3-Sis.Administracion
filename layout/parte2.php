@@ -1,9 +1,13 @@
 <!-- Main Footer -->
 <footer class="main-footer">
     <!-- To the right -->
+<<<<<<< HEAD
     <div class="float-right d-none d-sm-inline">
         Anything you want
     </div>
+=======
+  
+>>>>>>> e916fd0 (Subida del proyecto con correcciones semi final)
     <!-- Default to the left -->
     
 </footer>
